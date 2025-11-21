@@ -60,6 +60,8 @@ def get_weather():
         clothing_advice = calculate_clothing(current_temp)
 
         # 获取 OWM 的图标代码 (例如 "01d")
+        # 获取 OWM 的图标代码 (例如 "01d")
+        icon_code = res['weather'][0]['icon']
         icon_url = f"https://raw.githubusercontent.com/jinwh5/ScheduledEmail-Tasks/main/weather-icons/{icon_code}.png"
         
         return {
